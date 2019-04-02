@@ -3,7 +3,7 @@
   "name": "OfficeSpaceMap",
   "description": "Integrate Office Space with your Google Calendar",
   "version": "1",
-  "author": "Edison Calle <edison.calle@tumblr.com>",
+  "author": "Edison Calle <xaviered@gmail.com>",
   "browser_action": {
     "default_icon": "images/tab-icon.png",
     "default_title": "Office Space for Google Calendar",
