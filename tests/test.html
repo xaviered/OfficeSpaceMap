@@ -1,0 +1,23 @@
+<script src="../js/jquery-3.3.1.min.js">
+</script>
+<script src="../js/OfficeSpaceMap.js"></script>
+
+<script type="application/javascript">
+  let map = new OfficeSpaceMap();
+  // let roomInfo = {building: "NY-770 Broadway", room: "Roebling 6C:B01", floor: ""};
+  // let roomInfo = {building: "NY-770 Broadway", room: "5B:A148", floor: ""};
+  let roomInfo = {building: "NY-770 Broadway", room: "Bleeker", floor: ""};
+  // let roomInfo = {building: "NY-770 Broadway", room: "5B:A148", floor: ""};
+
+  // let roomInfo = {building: "NY-770 Broadway", room: "Edison Calle", floor: ""};
+
+  function openFrame() {
+    map.loadMap(roomInfo);
+  }
+</script>
+
+<a href="javascript: void(0);" id="map" onclick="openFrame()">
+    open frame
+</a>
+
+

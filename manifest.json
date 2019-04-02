@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "OfficeSpaceMap",
+  "description": "Integrate Office Space with your Google Calendar",
+  "version": "1",
+  "author": "Edison Calle <edison.calle@tumblr.com>",
+  "browser_action": {
+    "default_icon": "images/tab-icon.png",
+    "default_title": "Office Space for Google Calendar",
+    "default_popup": ""
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://calendar.google.com/*"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "js": [
+        "js/jquery-3.3.1.min.js",
+        "js/OfficeSpaceMap.js",
+        "js/init.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+}
